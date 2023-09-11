@@ -1,7 +1,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	font: 400;
-	font-size: 16px;
+	font-size: $default-font-size;
 	line-height: 1.7;
 	color: $color-dark;
 	padding: 1rem;
@@ -58,5 +58,19 @@ body {
 	&:hover {
 		transform: skewY(2deg) skewX(15deg) scale(1.1);
 		text-shadow: 0.5rem 1rem 2rem rgba($color-dark, 0.2);
+	}
+}
+
+.heading-tertiary {
+	font-size: $default-font-size;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-size: $default-font-size;
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
 	}
 }
